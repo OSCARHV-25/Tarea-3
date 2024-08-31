@@ -13,7 +13,8 @@ public class consumidor extends Thread {
         for (int i = 0; i < 1000; i++) {
             try {
                 int numero = cola.consumir();
-                System.out.println("Consumido: " + numero);
+                Thread.sleep(10);
+                System.out.println("Numero Consumido: " + numero);
                 categorizar(numero);
             } catch (InterruptedException e) {
                 e.printStackTrace();
