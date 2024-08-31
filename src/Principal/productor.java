@@ -13,7 +13,7 @@ public class productor extends Thread {
             int numero = (int) (Math.random() * 100)+1;
             try {
                 cola.producir(numero);
-                Thread.sleep(5);
+                Thread.sleep(10);
                 System.out.println("Numero Producido = " + numero);
             }
             catch (InterruptedException e) {
